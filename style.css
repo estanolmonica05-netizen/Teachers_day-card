@@ -1,0 +1,96 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 40px 60px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  max-width: 600px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+}
+
+button {
+  background: #ff6f61;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff3b2e;
+  transform: scale(1.05);
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+  font-size: 0.9em;
+}
+
+.hearts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.heart {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.8);
+  animation: float 6s infinite ease-in;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(100vh) scale(0.8);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-10vh) scale(1.2);
+    opacity: 0;
+  }
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 1.2em;
+  min-height: 60px;
+}
