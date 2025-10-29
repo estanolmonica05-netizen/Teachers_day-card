@@ -1,5 +1,3 @@
-https://estanolmonica05-netizen.github.io/Teachers_day-card/
-
 # Teachers_day-card
 🎉 Teachers’ Day Message Card
 
